@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.me.pojo.packages" table="packages">
+		<id column="packageId" name="packageId" type="int">
+			<generator class="native" />
+		</id>
+		<many-to-one class="com.me.pojo.user" column="user" foreign-key="fk_packages_user" name="user" not-null="true"/>
+		<property column="packageDesc" name="firstName" type="string" />
+		<property column="aisleNumber" name="lastName" type="string" />
+		<property column="mailRoomNumber" name="mailRoomNumber"
+			type="int" />
+		<property column="clerkName" name="clerkName" type="string" />
+		<property column="notifyStudent" name="notifyStudent"
+			type="boolean" />
+		<property column="studentNuid" name="studentNUID" type="int" />
+		<property column="otp" name="otp" type="long" />
+	</class>
+</hibernate-mapping>
