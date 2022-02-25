@@ -2,7 +2,7 @@ University Mail Services Application is Maven project based on Java, Spring MVC,
 
 This is a Java based web application.
 
-###############################################################################################################
+######################################################################################################
 
 Technologies used
 
